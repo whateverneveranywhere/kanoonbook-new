@@ -13,7 +13,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/png" href="https://www.pubisha.com/assets/images/fav-icon-16.png" />
+  <link rel="shortcut icon" type="image/png" href="https://www.kanoonbook.ir/assets/img/90_90_wXf_icon.ico" />
   <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.theme.default.min.css">
@@ -27,7 +27,102 @@
 <body>
 
 <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-main bg-main ltr">
+    <a class="navbar-brand" href="#">
+     <img src="https://www.kanoonbook.ir/assets/img/Logo.png" width="140" class="d-inline-block align-top img-fluid" alt="">
+   </a>
+   <div class="pt-1">
+     <a href="#"><i class="fas fa-user m-2 text-dark"></i></a>
+     <a href="#" onclick="cartFunc()">
+       <i class="fas fa-shopping-cart m-2 text-dark"></i>
+ <span class="badge badge-pill badge-danger cart-quant-badge">2</span>
+</a>
+   </div>
 
+   <div class="ltr" id="carter">
+      <div class="shopping-cart-container pt-3">
+        <div class="container-fluid">
+          <div class="row text-small">
+            <div class="col-md-12">
+              <div class="c-navi-list__basket-total">
+                <span class="text-dark">مبلغ کل خرید:</span>
+                <span> ۱۲۰,۰۰۰</span>
+                <span> تومان</span>
+              </div>
+              <a class="c-navi-list__basket-link" href="#">
+                <span>مشاهده سبد خرید</span>
+              </a>
+            </div>
+          </div>
+
+          <hr>
+
+
+          <div class="row product-cart-pop">
+            <div class="col-md-8 hover-cart-text">
+              <a href="#" class="text-dark">
+                <p>کرم ضد آفتاب الارو سری Foundation Effect مدل Prote Prote Prote Prote</p>
+              </a>
+              <span class="c-price text-danger pt-1 text-center">
+                <span class="c-price__value js-price-value pt-1">
+                  ۱۰۸,۹۰۰
+                  <span class="c-price__currency">تومان</span>
+                </span>
+                <p class="d-inline-block text-small pl-5">تعداد: 0</p>
+              </span>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/81VnTWWiJcL._SX342_.jpg" width="100%" class="rounded mx-auto d-block" alt="..."></a>
+              <a href="#"><i class="far fa-times-circle mt-2"></i></a>
+            </div>
+          </div>
+          <hr>
+          <div class="row product-cart-pop">
+            <div class="col-md-8 hover-cart-text">
+              <a href="#" class="text-dark">
+                <p>کرم ضد آفتاب الارو سری Foundation Effect مدل Prote Prote Prote Prote</p>
+              </a>
+              <span class="c-price text-danger pt-1 text-center">
+                <span class="c-price__value js-price-value pt-1">
+                  ۱۰۸,۹۰۰
+                  <span class="c-price__currency">تومان</span>
+                </span>
+                <p class="d-inline-block text-small pl-5">تعداد: 0</p>
+              </span>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/81VnTWWiJcL._SX342_.jpg" width="100%" class="rounded mx-auto d-block" alt="..."></a>
+              <a href="#"><i class="far fa-times-circle mt-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-2">
+          <button type="button" class="btn btn-outline-warning btn-sm btn-block">ثبت سفارش و ارسال</button>
+
+        </div>
+      </div>
+    </div>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-small" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto rtl">
+        <a class="nav-item nav-link active" href="#">صفحه اصلی <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="#">مراکز پخش و فروش</a>
+        <a class="nav-item nav-link" href="#">خانه شیشه ای</a>
+        <a class="nav-item nav-link" href="#">همکاری با ما</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid bg-thi">
+    <p class="text-center text-xsmall pt-2 pb-2">
+      <i class="fas fa-percent ml-1"></i>
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+      <i class="fas fa-percent mr-1"></i>
+    </p>
+  </div>
 </header>
 
   <main>
