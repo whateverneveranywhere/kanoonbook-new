@@ -20,7 +20,7 @@ dots: false,
             items:2
         },
         600:{
-            items:4
+            items:3
         },
         1000:{
             items:4
@@ -64,4 +64,15 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
       } else {
         x.style.display = "none";
       }
+    }
+
+
+    // Open the full screen search box
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    // Close the full screen search box
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
     }
