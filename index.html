@@ -85,7 +85,7 @@
   <!--load all styles -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <title>پابیشا | نقد و بررسی ، انتخاب و خرید آنلاین کتاب درسی</title>
+  <title>کانون فرهنگی آموزش قلم چی | خرید آنلاین کتاب های قلمچی</title>
 </head>
 
 <body>
@@ -100,7 +100,11 @@
         <a class="hide-mobile" href="#" onclick="openSearch()">
           <i class="fas fa-search m-2 text-dark"></i>
         </a>
-        <a href="#" onclick="cartFunc()">
+        <a class="hide-mobile" href="#" onclick="cartFunc()">
+          <i class="fas fa-shopping-cart m-2 text-dark"></i>
+          <span class="badge badge-pill badge-danger cart-quant-badge">2</span>
+        </a>
+        <a class="hide-desktop" href="#">
           <i class="fas fa-shopping-cart m-2 text-dark"></i>
           <span class="badge badge-pill badge-danger cart-quant-badge">2</span>
         </a>
@@ -191,7 +195,7 @@
               <form>
                 <div class="form-group mt-1 mb-1">
                   <input class="text-right" type="text" required="required" />
-                  <label for="input" class="control-label text-white">نام کتاب مورد نظر، کد کتاب یا سری کتاب را جستجو کنید!</label><i class="bar"></i>
+                  <label for="input" class="control-label text-white">نام کتاب، کد کتاب یا سری کتاب را جستجو کنید!</label><i class="bar"></i>
                 </div>
                 <div class="button-container mt-3">
                   <button type="button" class="button"><span>جستجو</span></button>
@@ -223,9 +227,117 @@
   </header>
 
   <main>
-
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid pt-1">
+        <div class="row">
+          <div class="col-md-12 rounded text-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner rounded shadow-lg">
+                <div class="carousel-item active">
+                  <a href="#">
+                    <img class="d-block w-100" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009289.jpg" alt="First slide">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#">
+                    <img class="d-block w-100" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009137.jpg" alt="Second slide">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#">
+                    <img class="d-block w-100" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009579.jpg" alt="Third slide">
+                  </a>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid hide-mobile">
+        <div class="row">
+          <div class="col-md-12 rounded text-center pt-3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 rounded p-2 rep-pat">
+                  <p class="text-center p-2">
+                    <span class="pulse d-inline-block">!</span>
+                    کتاب های مخصوص پایه خود را
+                    <strong class="font-weight-bold">راحت تر</strong>
+                    پیدا کنید!
+                  </p>
+                  <div class="w-100">
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">اول دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">سوم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">چهارم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">پنجم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">ششم دبستان</button>
+                  </div>
+                  <hr class="sub-devider">
+                  <div class="w-100">
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">هفتم</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">هشتم</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">نهم</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دهم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دهم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دهم ریاضی</button>
+                  </div>
+                  <hr class="sub-devider">
+                  <div class="w-100">
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">چهارم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">چهارم ریاضی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">یازدهم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">یازدهم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">یازدهم ریاضی</button>
+                  </div>
+                  <hr class="sub-devider">
+                  <div class="w-100">
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوازدهم ریاضی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوازدهم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوازدهم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">هنرستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">کنکور زبان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small">کنکور هنر</button>
+                  </div>
+                </div>
+                <div class="col-md-4 rounded text-center m-auto">
+                  <a href="#">
+                    <img class="img-fluid rounded shadow-lg mt-2" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009303.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a href="#section2" id="section1" class="scrollitdown">
+        <div class="scroll-downs fixedelement">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+      </a>
+    </section>
+    <section>
+      <div class="container-fluid pt-3 hide-mobile">
         <div class="row">
           <div class="col-md-12">
             <a href="#">
@@ -235,51 +347,8 @@
         </div>
       </div>
     </section>
-
     <section>
-      <div class="container-fluid pt-3">
-        <div class="row">
-          <div class="col-md-12 rounded text-center">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner rounded shadow-lg">
-    <div class="carousel-item active">
-      <a href="#">
-        <img class="d-block w-100" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009289.jpg" alt="First slide">
-</a>
-    </div>
-    <div class="carousel-item">
-      <a href="#">
-        <img class="d-block w-100" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009137.jpg" alt="Second slide">
-</a>
-    </div>
-    <div class="carousel-item">
-      <a href="#">
-        <img class="d-block w-100" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009579.jpg" alt="Third slide">
-</a>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container-fluid pb-3">
+      <div class="container-fluid pb-3" id="section2">
         <div class="row">
           <div class="col-md-12">
             <section>
@@ -290,19 +359,53 @@
                       <h6 class="pt-3 offer-timer-heading font-weight-bold text-white" id="head">
                         لورم ایپسوم متن ساختگی
                       </h6>
-                      <ul class="mr-auto text-center font-weight-bold text-xsmall text-white timer-top pt-1">
+                      <ul class="mr-auto text-center font-weight-bold text-xsmall text-white timer-top pt-1 ltr pl-1">
                         <li class="li-timer"><span id="days"></span>روز</li>
                         <li class="li-timer"><span id="hours"></span>ساعت</li>
                         <li class="li-timer"><span id="minutes"></span>دقیقه</li>
                         <li class="li-timer"><span id="seconds"></span>ثانیه</li>
                       </ul>
                     </div>
-
                   </div>
                 </div>
                 <div class="row carousel-shadow rounded box-shadow">
                   <div class="owl-carousel bg-light rounded shadow-lg p-2">
-                    <div class="product-hover p-2">
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit out-of-stock" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                              <div class="text-on-image text-dark font-weight-bold text-center mt-5">!تمام شد
+                                <img src="https://images.vexels.com/media/users/3/134546/isolated/preview/b1b61276fef1c4a683aabaa53833c7ca-emoji-emoticon-sad-face-by-vexels.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -334,7 +437,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -366,7 +469,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -398,7 +501,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -430,7 +533,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -462,7 +565,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -494,7 +597,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -526,7 +629,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -558,7 +661,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -590,39 +693,7 @@
 
                       </a>
                     </div>
-                    <div class="product-hover p-2">
-                      <a href="#">
-                        <span class="c-product-box__discount-badge">
-                          ٪۲۳
-                        </span>
-                        <div class="book ltr">
-                          <div class="front">
-                            <div class="cover">
-                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
-                            </div>
-                          </div>
-                          <div class="left-side bg-gh">
-                            <h2 class="text-white">
-                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
-                            </h2>
-                          </div>
-                        </div>
-                        <span class="c-product-box__title text-center text-small">
-                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
-                        </span>
-                        <span class="c-price text-center">
-                          <span class="c-price text-danger">
-                            <span class="c-price__value js-price-value">
-                              <del>۶۹,۰۰۰ </del>
-                              ۱۰۸,۹۰۰
-                              <span class="c-price__currency">تومان</span>
-                            </span>
-                          </span>
-                        </span>
-
-                      </a>
-                    </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -653,7 +724,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="product-hover p-2">
+                    <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__discount-badge">
                           ٪۲۳
@@ -693,57 +764,1320 @@
         </div>
       </div>
     </section>
-
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 rounded text-center">
-            <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009563.gif" alt="">
+          <div class="col-md-6 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009629.jpg" alt="">
+            </a>
           </div>
-          <div class="col-md-8 rounded text-center">
-            <div class="">
-              <button type="button" class="btn btn-outline-primary m-2">اول دبستان</button>
-              <button type="button" class="btn btn-outline-primary m-2">دوم دبستان</button>
-              <button type="button" class="btn btn-outline-primary m-2">سوم دبستان</button>
-              <button type="button" class="btn btn-outline-primary m-2">چهارم دبستان</button>
-            </div>
-            <div class="">
-              <button type="button" class="btn btn-outline-primary m-2">پنجم دبستان</button>
-              <button type="button" class="btn btn-outline-primary m-2">ششم دبستان</button>
-              <button type="button" class="btn btn-outline-primary m-2">هفتم</button>
-              <button type="button" class="btn btn-outline-primary m-2">هشتم</button>
-            </div>
-            <div class="">
-              <button type="button" class="btn btn-outline-primary m-2">نهم</button>
-              <button type="button" class="btn btn-outline-primary m-2">دهم انسانی</button>
-              <button type="button" class="btn btn-outline-primary m-2">دهم تجربی</button>
-              <button type="button" class="btn btn-outline-primary m-2">دهم ریاضی</button>
-            </div>
-            <div class="">
-              <button type="button" class="btn btn-outline-primary m-2">چهارم انسانی</button>
-              <button type="button" class="btn btn-outline-primary m-2">چهارم تجربی</button>
-              <button type="button" class="btn btn-outline-primary m-2">چهارم ریاضی</button>
-              <button type="button" class="btn btn-outline-primary m-2">یازدهم انسانی</button>
-            </div>
-            <div class="">
-              <button type="button" class="btn btn-outline-primary m-2">یازدهم تجربی</button>
-              <button type="button" class="btn btn-outline-primary m-2">یازدهم ریاضی</button>
-              <button type="button" class="btn btn-outline-primary m-2">دوازدهم ریاضی</button>
-              <button type="button" class="btn btn-outline-primary m-2">دوازدهم تجربی</button>
-            </div>
-            <div class="">
-              <button type="button" class="btn btn-outline-primary m-2">دوازدهم انسانی</button>
-              <button type="button" class="btn btn-outline-primary m-2">هنرستان</button>
-              <button type="button" class="btn btn-outline-primary m-2">کنکور زبان</button>
-              <button type="button" class="btn btn-outline-primary m-2">کنکور هنر</button>
-            </div>
+          <div class="col-md-6 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009573.jpg" alt="">
+            </a>
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center mb-2 testemonial">
+testemonial
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid pb-3" id="section2">
+        <div class="row">
+          <div class="col-md-12">
+            <section>
+              <div class="container pt-2 p-4">
+                <div class="col-md-12 countdown-bg rounded-top short-height">
+                  <div class="container super-small">
+                    <div class="row offer-timer">
+                      <h6 class="pt-4 offer-timer-heading font-weight-bold text-white res-text-title" id="head">
+                        لورم ایپسوم متن ساختگی
+                      </h6>
+                      <a class="mr-auto" href="#">
+                              <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
+                            </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row carousel-shadow rounded box-shadow">
+                  <div class="owl-carousel bg-light rounded shadow-lg p-2">
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                 جدید
+               </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit out-of-stock" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                              <div class="text-on-image text-dark font-weight-bold text-center mt-5">!تمام شد
+                                <img src="https://images.vexels.com/media/users/3/134546/isolated/preview/b1b61276fef1c4a683aabaa53833c7ca-emoji-emoticon-sad-face-by-vexels.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                 جدید
+               </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                                     جدید
+                                   </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009567.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid pb-3" id="section2">
+        <div class="row">
+          <div class="col-md-12">
+            <section>
+              <div class="container pt-2 p-4">
+                <div class="col-md-12 countdown-bg rounded-top short-height">
+                  <div class="container super-small">
+                    <div class="row offer-timer">
+                      <h6 class="pt-4 offer-timer-heading font-weight-bold text-white res-text-title" id="head">
+                        لورم ایپسوم متن ساختگی
+                      </h6>
+                      <a class="mr-auto" href="#">
+                              <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
+                            </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row carousel-shadow rounded box-shadow">
+                  <div class="owl-carousel bg-light rounded shadow-lg p-2">
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                 جدید
+               </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit out-of-stock" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                              <div class="text-on-image text-dark font-weight-bold text-center mt-5">!تمام شد
+                                <img src="https://images.vexels.com/media/users/3/134546/isolated/preview/b1b61276fef1c4a683aabaa53833c7ca-emoji-emoticon-sad-face-by-vexels.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                 جدید
+               </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                                     جدید
+                                   </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009336.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009587.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid pb-3" id="section2">
+        <div class="row">
+          <div class="col-md-12">
+            <section>
+              <div class="container pt-2 p-4">
+                <div class="col-md-12 countdown-bg rounded-top short-height">
+                  <div class="container super-small">
+                    <div class="row offer-timer">
+                      <h6 class="pt-4 offer-timer-heading font-weight-bold text-white res-text-title" id="head">
+                        لورم ایپسوم متن ساختگی
+                      </h6>
+                      <a class="mr-auto" href="#">
+                              <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
+                            </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row carousel-shadow rounded box-shadow">
+                  <div class="owl-carousel bg-light rounded shadow-lg p-2">
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                 جدید
+               </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit out-of-stock" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                              <div class="text-on-image text-dark font-weight-bold text-center mt-5">!تمام شد
+                                <img src="https://images.vexels.com/media/users/3/134546/isolated/preview/b1b61276fef1c4a683aabaa53833c7ca-emoji-emoticon-sad-face-by-vexels.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                 جدید
+               </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__new-badge">
+                                     جدید
+                                   </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <span class="c-product-box__discount-badge">
+                          ٪۲۳
+                        </span>
+                        <div class="book ltr">
+                          <div class="front">
+                            <div class="cover">
+                              <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                            </div>
+                          </div>
+                          <div class="left-side bg-gh">
+                            <h2 class="text-white">
+                              <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="c-product-box__title text-center text-small">
+                          آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                        </span>
+                        <span class="c-price text-center">
+                          <span class="c-price text-danger">
+                            <span class="c-price__value js-price-value">
+                              <del>۶۹,۰۰۰ </del>
+                              ۱۰۸,۹۰۰
+                              <span class="c-price__currency">تومان</span>
+                            </span>
+                          </span>
+                        </span>
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid hide-mobile">
+        <div class="row">
+          <div class="col-md-3 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009303.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009213.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009311.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mb-2">
+            <a href="#">
+              <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009307.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
 
     </section>
-
-
   </main>
 
   <footer>
@@ -760,6 +2094,7 @@
   <script src="./assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
   <script defer src="./assets/fontawesome/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!--load all styles -->
 </body>
