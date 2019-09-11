@@ -194,6 +194,56 @@ direction: rtl !important;
 
 }
 
+
+.color-main {
+
+	color: #ffd600;
+
+}
+
+.color-sec {
+
+	color: #c7a500;
+
+}
+
+.color-thi {
+
+	color: #ffff52;
+
+}
+
+.color-gh {
+
+color: #33527d;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg-main {
 
 	background-color: #ffd600;
@@ -1627,8 +1677,8 @@ border-radius: 50%;
 
 }
 
-.testemonial {
-	right: -30%;
+.svg-cover-right {
+	right: 0;
 	position: absolute;
 	width: 50%;
 	height: 900px;
@@ -1639,88 +1689,66 @@ border-radius: 50%;
 
 }
 
+.svg-cover-left {
+	left: 0;
+	position: absolute;
+	width: 50%;
+	height: 900px;
+	background-image:
+	url('../img/hero-shape-left.svg');
+	background-repeat:no-repeat;
+	background-position:center;
 
+}
 
+.same-width-button {
 
+width: 105px;
 
+}
 
+.svg-cover {
+  	position: absolute;
+	height: 900px;
+	background-image:
+	url('../img/hero-shape-left.svg');
+	background-repeat:no-repeat;
+	background-position:center;
 
+}
 
+.page-link {
 
+  border-radius: 60px;
+  margin: 0px 10px 0px 10px;
 
+}
 
+.circular-border {
 
+border-radius: 60px;
 
+}
 
+.rep-pat-footer {
 
+background-image: linear-gradient(to bottom, #fceb0ae0,#ffffff), url('../img/repeat.png');
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center;
 
+}
 
+.testemonial-bg {
 
+    background-image: url('../img/teste-bg.png');
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center;
+    height: 100%;
+    margin-bottom: 40px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
