@@ -59,7 +59,8 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
 
     function cartFunc() {
       var x = document.getElementById("carter");
-      if (x.style.display === "none") {
+
+      if (x.style.display !== "block") {
         x.style.display = "block";
       } else {
         x.style.display = "none";
@@ -70,6 +71,7 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
     // Open the full screen search box
     function openSearch() {
       document.getElementById("myOverlay").style.display = "block";
+      console.log('shit');
     }
 
     // Close the full screen search box
@@ -90,28 +92,32 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
 
 
   // scroller Smooth
-
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("#section1").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
+  $(".section1").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".section2").offset().top},
+          'slow');
   });
+
+
+  // scroll to top
+
+
+  //Get the button:
+  mybutton = document.getElementById("scrltp");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }

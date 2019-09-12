@@ -91,7 +91,7 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-main bg-main ltr default-shadow">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-main bg-main ltr default-shadow">
       <a class="navbar-brand" href="#">
         <img src="https://www.kanoonbook.ir/assets/img/Logo.png" width="140" class="d-inline-block align-top img-fluid" alt="">
       </a>
@@ -174,16 +174,92 @@
           </div>
           <div class="text-center p-2">
             <button type="button" class="btn btn-outline-primary btn-sm btn-block">ثبت سفارش و ارسال</button>
-
           </div>
         </div>
       </div>
 
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler hide-desktop" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-small" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto rtl hide-desktop">
+          <a class="nav-item nav-link active" href="#">صفحه اصلی <span class="sr-only"></span></a>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropdabestan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              دبستان
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropdabestan">
+              <a class="nav-item nav-link" href="#">اول دبستان</a>
+              <a class="nav-item nav-link" href="#">دوم دبستان</a>
+              <a class="nav-item nav-link" href="#">سوم دبستان</a>
+              <a class="nav-item nav-link" href="#">چهارم دبستان</a>
+              <a class="nav-item nav-link" href="#">پنجم دبستان</a>
+              <a class="nav-item nav-link" href="#">ششم دبستان</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropmotevaset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              متوسطه
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropmotevaset">
+              <a class="nav-item nav-link" href="#">هفتم</a>
+              <a class="nav-item nav-link" href="#">هشتم</a>
+              <a class="nav-item nav-link" href="#">نهم</a>
+              <a class="nav-item nav-link" href="#">دهم انسانی</a>
+              <a class="nav-item nav-link" href="#">دهم تجربی</a>
+              <a class="nav-item nav-link" href="#">دهم ریاضی</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropdabirestan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              دبیرستان
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropdabirestan">
+              <a class="nav-item nav-link" href="#">چهارم انسانی</a>
+              <a class="nav-item nav-link" href="#">چهارم تجربی</a>
+              <a class="nav-item nav-link" href="#">چهارم ریاضی</a>
+              <a class="nav-item nav-link" href="#">یازدهم انسانی</a>
+              <a class="nav-item nav-link" href="#">یازدهم تجربی</a>
+              <a class="nav-item nav-link" href="#">یازدهم ریاضی</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropkonkoori" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              کنکوری
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropkonkoori">
+              <a class="nav-item nav-link" href="#">دوازدهم ریاضی</a>
+              <a class="nav-item nav-link" href="#">دوازدهم تجربی</a>
+              <a class="nav-item nav-link" href="#">دوازدهم انسانی</a>
+              <a class="nav-item nav-link" href="#">هنرستان</a>
+              <a class="nav-item nav-link" href="#">کنکور زبان</a>
+              <a class="nav-item nav-link" href="#">کنکور هنر</a>
+            </div>
+          </div>
+          <div class="mr-auto ml-auto text-center hide-desktop">
+            <div class="container">
+              <form>
+                <div class="form-group mt-1 mb-1">
+                  <input class="text-right" type="text" required="required" />
+                  <label for="input" class="control-label text-muted">جستجو کتاب</label><i class="bar"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <button class="navbar-toggler hide-mobile" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-small hide-mobile" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto rtl">
           <a class="nav-item nav-link active" href="#">صفحه اصلی <span class="sr-only"></span></a>
           <a class="nav-item nav-link" href="#">مراکز پخش و فروش</a>
@@ -194,7 +270,7 @@
             <div class="overlay-content">
               <form>
                 <div class="form-group mt-1 mb-1">
-                  <input class="text-right" type="text" required="required" />
+                  <input class="text-right text-white" type="text" required="required" />
                   <label for="input" class="control-label text-white">نام کتاب، کد کتاب یا سری کتاب را جستجو کنید!</label><i class="bar"></i>
                 </div>
                 <div class="button-container mt-3">
@@ -282,38 +358,39 @@
                     پیدا کنید!
                   </p>
                   <div class="w-100">
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">اول دبستان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوم دبستان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">سوم دبستان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">چهارم دبستان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">پنجم دبستان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">ششم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">اول دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دوم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">سوم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">چهارم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">پنجم دبستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">ششم دبستان</button>
                   </div>
                   <hr class="sub-devider">
                   <div class="w-100">
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">هفتم</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">هشتم</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">نهم</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دهم انسانی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دهم تجربی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دهم ریاضی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">هفتم</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">هشتم</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">نهم</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دهم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دهم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دهم ریاضی</button>
                   </div>
                   <hr class="sub-devider">
                   <div class="w-100">
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">چهارم تجربی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">چهارم ریاضی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">یازدهم انسانی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">یازدهم تجربی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">یازدهم ریاضی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">چهارم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">چهارم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">چهارم ریاضی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">یازدهم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">یازدهم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">یازدهم ریاضی</button>
                   </div>
                   <hr class="sub-devider">
                   <div class="w-100">
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوازدهم ریاضی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوازدهم تجربی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">دوازدهم انسانی</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">هنرستان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">کنکور زبان</button>
-                    <button type="button" class="btn btn-outline-primary m-1 text-small">کنکور هنر</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دوازدهم ریاضی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دوازدهم تجربی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دوازدهم انسانی</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">هنرستان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">کنکور زبان</button>
+                    <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">کنکور هنر</button>
                   </div>
                 </div>
                 <div class="col-md-4 rounded text-center m-auto">
@@ -328,7 +405,7 @@
       </div>
     </section>
     <section>
-      <a href="#section2" id="section1" class="scrollitdown">
+      <a href="#" class="scrollitdown section1">
         <div class="scroll-downs fixedelement">
           <div class="mousey">
             <div class="scroller"></div>
@@ -348,7 +425,7 @@
       </div>
     </section>
     <section>
-      <div class="container-fluid pb-3" id="section2">
+      <div class="container-fluid pb-3 section2">
         <div class="row">
           <div class="col-md-12">
             <section>
@@ -767,6 +844,33 @@
     <section>
       <div class="container-fluid">
         <div class="row">
+          <div class="col-md-12 testemonial-bg text-center p-3 ml-auto mr-auto w-75">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="text-left mr-auto circular-border mt-3" height="50" src="https://www.kanoonbook.ir/./assets/img/members/profile/102.png" alt="">
+                  <h5 class="pr-2 pt-3">محمدجواد سلطانی </h5>
+                  <p class="text-small text-center">رتبه 2 تجربی : پیمانه بندی سوالات در کتاب های آبی نظم کارم را افزایش داده بود</p>
+                </div>
+                <div class="carousel-item">
+                  <img class="text-left mr-auto circular-border mt-3" height="50" src="https://www.kanoonbook.ir/./assets/img/members/profile/121.png" alt="">
+                  <h5 class="pr-2 pt-3">رسا ظفری</h5>
+                  <p class="text-small text-center"> رتبه 4 تجربی : حل کردن تست های زیاد با سطح متوسط در کتاب آبی باعث تکرار زیاد و کاهش بی دقتی هایم می شد</p>
+                </div>
+                <div class="carousel-item active">
+                  <img class="text-left mr-auto circular-border mt-3" height="50" src="https://www.kanoonbook.ir/./assets/img/members/profile/112.png" alt="">
+                  <h5 class="pr-2 pt-3">سپهر صالحی عمران </h5>
+                  <p class="text-small text-center">رتبه 7 تجربی : طبقه بندی ریز به ریز مطالب و تست های متنوع از ویژگی کتاب های آبی است</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
           <div class="col-md-6 text-center mb-2">
             <a href="#">
               <img class="img-fluid rounded shadow-lg" src="https://bucket-15.digicloud-oss.com/digikala-adservice-banners/1000009629.jpg" alt="">
@@ -781,16 +885,7 @@
       </div>
     </section>
     <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 text-center mb-2 testemonial">
-testemonial
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container-fluid pb-3" id="section2">
+      <div class="container-fluid pb-3">
         <div class="row">
           <div class="col-md-12">
             <section>
@@ -802,8 +897,8 @@ testemonial
                         لورم ایپسوم متن ساختگی
                       </h6>
                       <a class="mr-auto" href="#">
-                              <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
-                            </a>
+                        <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -812,8 +907,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                 جدید
-               </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -846,8 +941,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                 جدید
-               </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -877,8 +972,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                                     جدید
-                                   </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -1212,7 +1307,7 @@ testemonial
       </div>
     </section>
     <section>
-      <div class="container-fluid pb-3" id="section2">
+      <div class="container-fluid pb-3">
         <div class="row">
           <div class="col-md-12">
             <section>
@@ -1224,8 +1319,8 @@ testemonial
                         لورم ایپسوم متن ساختگی
                       </h6>
                       <a class="mr-auto" href="#">
-                              <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
-                            </a>
+                        <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1234,8 +1329,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                 جدید
-               </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -1268,8 +1363,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                 جدید
-               </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -1299,8 +1394,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                                     جدید
-                                   </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -1639,7 +1734,7 @@ testemonial
       </div>
     </section>
     <section>
-      <div class="container-fluid pb-3" id="section2">
+      <div class="container-fluid pb-3">
         <div class="row">
           <div class="col-md-12">
             <section>
@@ -1651,8 +1746,8 @@ testemonial
                         لورم ایپسوم متن ساختگی
                       </h6>
                       <a class="mr-auto" href="#">
-                              <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
-                            </a>
+                        <h6 class="pt-4 font-weight-bold text-white pb-3 res-text-all"> مشاهده همه <i class="fas fa-angle-left pt-1"></i></h6>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1661,8 +1756,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                 جدید
-               </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -1695,8 +1790,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                 جدید
-               </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -1726,8 +1821,8 @@ testemonial
                     <div class="p-2">
                       <a href="#">
                         <span class="c-product-box__new-badge">
-                                     جدید
-                                   </span>
+                          جدید
+                        </span>
                         <div class="book ltr">
                           <div class="front">
                             <div class="cover">
@@ -2076,12 +2171,188 @@ testemonial
       </div>
     </section>
     <section>
+      <div class="container-fluid text-center mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/khane_shishei-f.png" alt="">
+            <div class="glasshouse-time p-3">
+              چهارشنبه 20 شهریور 98<i class="far fa-clock mr-2"></i>
+            </div>
+            <div class="pt-2 pb-2">
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">امروز</button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">دیروز</button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">2 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">3 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">4 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">5 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">6 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">7 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">8 روز قبل </button>
+              <button type="button" class="btn btn-outline-primary m-1 text-small same-width-button">9 روز قبل </button>
+            </div>
 
+            <div class="col-md-12 bg-white mt-2">
+              <div class="table-responsive">
+                <table class="table table-hover text-small">
+                  <thead>
+                    <tr>
+                      <th scope="col">شهر</th>
+                      <th scope="col">زمان سفارش </th>
+                      <th scope="col">ثبت سفارش تا ارسال(ساعات کاری) </th>
+                      <th scope="col">مدت زمان تحویل </th>
+                      <th scope="col">نحوه ارسال </th>
+                      <th scope="col">تعداد جلد سفارش </th>
+                      <th scope="col">تایید دانش آموز</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">استان خوزستان شهر بهبهان </th>
+                      <td>10:27 </td>
+                      <td>2 دقیقه </td>
+                      <td>در حال ارسال توسط نمایندگی و پست </td>
+                      <td>نمایندگی و پست </td>
+                      <td>7</td>
+                      <td>در انتظار تایید</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">استان فارس شهر جهرم </th>
+                      <td>09:04 </td>
+                      <td>5 دقیقه </td>
+                      <td>در حال ارسال توسط پیک درون شهری نمایندگی </td>
+                      <td>پیک درون شهری نمایندگی </td>
+                      <td>2</td>
+                      <td>در انتظار تایید</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">استان تهران شهر تهران </th>
+                      <td>00:28 </td>
+                      <td>8 ساعت و31 دقیقه </td>
+                      <td>در حال ارسال توسط پیک درون شهری نمایندگی </td>
+                      <td>پیک درون شهری نمایندگی </td>
+                      <td>3</td>
+                      <td>در انتظار تایید</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center text-small pr-1 pl-1 pt-3">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">قبلی</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">بعدی</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-md-12 bg-gh default-shadow">
+          <a href="#">
+            <h5 class="text-center text-white pb-3" id="scrltp">
+              برگشت به بالا
+              <i class="fas fa-chevron-circle-up color-main display-5 mt-4"></i> </h5>
+          </a>
+        </div>
+        <div class="col-md-2 text-right p-4 rep-pat-footer hide-mobile">
+          <h5 class="pb-3">مزایای خرید ازما</h5>
+          <a class="text-small text-dark" href="#">
+            <p>سفارشات</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>خرید آسان</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>پشتیبانی قوی</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>جستجوی حرفه ای</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>کامل بودن</p>
+          </a>
+        </div>
+        <div class="col-md-2 text-right p-4 rep-pat-footer hide-mobile">
+          <h5 class="pb-3">مزایای خرید ازما</h5>
+          <a class="text-small text-dark" href="#">
+            <p>سفارشات</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>خرید آسان</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>پشتیبانی قوی</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>جستجوی حرفه ای</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>کامل بودن</p>
+          </a>
+        </div>
+        <div class="col-md-2 text-right p-4 rep-pat-footer hide-mobile">
+          <h5 class="pb-3">مزایای خرید ازما</h5>
+          <a class="text-small text-dark" href="#">
+            <p>سفارشات</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>خرید آسان</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>پشتیبانی قوی</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>جستجوی حرفه ای</p>
+          </a>
+          <a class="text-small text-dark" href="#">
+            <p>کامل بودن</p>
+          </a>
+        </div>
+        <div class="col-md-6 text-center d-inline-block p-4 rep-pat-footer">
+          <img class="img-fluid" src="https://shikeno.com/wp-content/uploads/2017/02/samandehi.png" alt="">
+          <img class="img-fluid" src="https://onlinerooz.com/wp-content/uploads/2018/05/icon-symbol-enamad.png" alt="">
+          <img class="hide-mobile" src="https://s.cafebazaar.ir/1/icons/com.fidibo.ghalamchi.white_512x512.png" height="120" alt="">
 
+          <div class="pt-2">
+            <p class="text-small text-right">
+              <i class="fas fa-map-marker-alt ml-2"></i>
+              تهران - تهران - شریعتی زیر پل سیدخندان خیابان میرمطهری جنوبی پلاک 22 طبقه اول واحد3 - کدپستی: 1555835831
+            </p>
+            <p class="text-small text-right">
+              <a class=" text-dark" href="#">
+                <i class="fas fa-at ml-2"></i>
+                info@kanoonbook.ir
+              </a>
+            </p>
+            <p class="text-small text-right">
+              <a class="text-dark" href="https://www.instagram.com/kanoonbook.ir/">
+                <i class="fab fa-instagram ml-2"></i>
+                به اینستاگرام کانون بوک بپیوندید
+              </a>
+            </p>
+          </div>
+
+        </div>
+        <div class="col-md-12 bg-gh text-center text-white pt-2 default-shadow">
+          <a class="text-white text-small ml-2 mr-2" href="tel:021887427650"><i class="fas fa-phone ml-2"></i>021-88742765</a>
+          <a class="text-white text-small ml-2 mr-2" href="tel:02166684650"><i class="fas fa-phone ml-2"></i>021-66684650</a>
+          <a class="text-white text-small ml-2 mr-2" href="tel:02166684652"><i class="fas fa-phone ml-2"></i>021-66684652</a>
+          <a class="text-white text-small ml-2 mr-2" href="tel:02166684654"><i class="fas fa-phone ml-2"></i>021-66684654</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Optional JavaScript -->
