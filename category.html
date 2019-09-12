@@ -251,34 +251,87 @@
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
-            <nav aria-label="breadcrumb" class="caro-nav">
-  <ol class="breadcrumb text-small">
-    <li class="breadcrumb-item"><a class="p-2" href="#">صفحه اصلی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-    <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
-
-    <li class="breadcrumb-item active" aria-current="page"><a class="p-2" href="#">کتاب های پایه یازدهم تجربی</a></li>
-  </ol>
-</nav>
+          <div class="col-md-12 text-center">
+            <nav aria-label="breadcrumb text-center" class="navber rounded">
+              <ol class="breadcrumb text-xsmall navol">
+                <li class="breadcrumb-item"><a class="p-2" href="#">صفحه اصلی</a></li>
+                <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
+                <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
+                <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
+                <li class="breadcrumb-item"><a class="p-2" href="#">دسته بندی</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a class="p-2" href="#">کتاب های پایه یازدهم تجربی</a></li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid pb-5">
         <div class="row">
+
+
+<div class="col-md-12 text-center hide-desktop">
+  <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#exampleModalCenter">
+    جستجوی پیشرفته
+  </button>
+</div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="bg-white rounded mb-5 mt-1 side-bar">
+                    <h6 class="text-center pt-4">جستجوی پیشرفته</h6>
+                    <div class="container w-75 text-small">
+                      <form>
+                        <div class="form-group rtl">
+                          <select>
+                            <option>استفاده شده</option>
+                            <option>نو</option>
+                          </select>
+                          <label for="select" class="control-label">وضعیت :</label><i class="bar"></i>
+                        </div>
+                        <h6 class="text-right"> ریدیو باتن :</h6>
+                        <div class="form-radio">
+                          <div class="radio">
+                            <label>
+                              <input class="text-right" type="radio" name="radio" checked="checked" />
+                              قلمچی<i class="helper"></i>
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input class="text-right" type="radio" name="radio" />خیلی زرد<i class="helper"></i>
+                            </label>
+                          </div>
+                        </div>
+                        <h6 class="text-right"> برند ها :</h6>
+                        <div class="checkbox">
+                          <label>
+                            <input class="text-right" type="checkbox" />برند اول<i class="helper"></i>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input class="text-right" type="checkbox" />برند دوم<i class="helper"></i>
+                          </label>
+                        </div>
+                      </form>
+                      <div class="button-container">
+                        <button type="button" class="button"><span>اعمال فیلتر ها</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
           <div class="col-md-3">
-            <div class="mb-5 hide-between">
+            <div class="mb-5 mt-2 sticky-top hide-mobile default-shadow rounded z-auto">
               <div class="bg-white rounded mb-3 mt-1 side-bar">
                 <h6 class="text-center pt-4">جستجوی پیشرفته</h6>
                 <div class="container w-75 text-small">
@@ -323,54 +376,101 @@
               </div>
             </div>
           </div>
-          <div class="col-md-9">
-            <div class="container pt-2 p-4">
-              <div class="row bg-white rounded box-shadow">
-                <div class="col-md-4">
+          <div class="col-md">
+            <div class="container pt-2">
+              <div class="row bg-white rounded default-shadow">
+                <div class="col-md-12 text-right bg-gh rounded-top hide-desktop">
+                  <div class="responsive-filter-scroll">
+                    <ul class="text-xsmall navol ol-responsive no-bulls">
+                      <div class="d-inline-block text-white">
+                        <p class="m-3 d-inline-block">
+                          <i class="fas fa-filter"></i>
+                          مرتب‌سازی بر اساس :
+                        </p>
+                      </div>
+                      <li class="li-buttons"><a href="#">
+                          <button type="button" class="btn btn-outline-light text-xsmall m-1 active">پربازدیدترین</button>
+                        </a></li>
+                      <li class="li-buttons"><a href="#">
+                          <button type="button" class="btn btn-outline-light text-xsmall m-1">پرفروش‌ترین‌</button>
+                        </a></li>
+                      <li class="li-buttons"><a href="#">
+                          <button type="button" class="btn btn-outline-light text-xsmall m-1">محبوب‌ترین</button>
+                        </a></li>
+                      <li class="li-buttons"><a href="#">
+                          <button type="button" class="btn btn-outline-light text-xsmall m-1">جدیدترین</button>
+                        </a></li>
+                      <li class="li-buttons"><a href="#">
+                          <button type="button" class="btn btn-outline-light text-xsmall m-1">سریع‌ترین ارسال</button>
+                        </a></li>
+                      <li class="li-buttons"><a href="#">
+                          <button type="button" class="btn btn-outline-light text-xsmall m-1">بیشترین تخفیف</button>
+                        </a></li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="col-md-12 text-right bg-gh rounded-top hide-mobile">
+                  <div class="d-inline-block text-white">
+                    <p class="text-small m-3 d-inline-block">
+                      <i class="fas fa-filter"></i>
+                      مرتب‌سازی بر اساس :
+                    </p>
+                    <div class="d-inline-block margin-but-res" data-toggle="buttons">
+                      <button type="button" class="btn btn-outline-light text-xsmall m-1 active">پربازدیدترین</button>
+                      <button type="button" class="btn btn-outline-light text-xsmall m-1">پرفروش‌ترین‌</button>
+                      <button type="button" class="btn btn-outline-light text-xsmall m-1">محبوب‌ترین</button>
+                      <button type="button" class="btn btn-outline-light text-xsmall m-1">جدیدترین</button>
+                      <button type="button" class="btn btn-outline-light text-xsmall m-1">سریع‌ترین ارسال</button>
+                      <button type="button" class="btn btn-outline-light text-xsmall m-1">بیشترین تخفیف</button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-4 pt-4 category-item">
+                  <div class="p-2">
+                    <div class="book ltr">
+                      <div class="front">
+                        <div class="cover">
+                          <div class="text-center c-promotion__badge c-promotion__badge--special-sale ">
+                            فروش ویژه
+                          </div>
+                          <img class="img-fluid w-100 h-inherit out-of-stock" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                          <div class="text-on-image text-dark font-weight-bold text-center mt-5">!تمام شد
+                            <img src="https://images.vexels.com/media/users/3/134546/isolated/preview/b1b61276fef1c4a683aabaa53833c7ca-emoji-emoticon-sad-face-by-vexels.png" height="100" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="left-side bg-gh">
+                        <h2 class="text-white">
+                          <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                        </h2>
+                      </div>
+                    </div>
+                    <span class="c-product-box__title text-center text-small">
+                      آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                    </span>
+                    <span class="c-price text-center">
+                      <span class="c-price text-danger">
+                        <span class="c-price__value js-price-value">
+                          <del>۶۹,۰۰۰ </del>
+                          ۱۰۸,۹۰۰
+                          <span class="c-price__currency">تومان</span>
+                        </span>
+                      </span>
+                    </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
-                      <span class="c-product-box__discount-badge">
-                        ٪۲۳
-                      </span>
                       <div class="book ltr">
                         <div class="front">
                           <div class="cover">
-                            <img class="img-fluid w-100 h-inherit out-of-stock" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
-                            <div class="text-on-image text-dark font-weight-bold text-center mt-5">!تمام شد
-                              <img src="https://images.vexels.com/media/users/3/134546/isolated/preview/b1b61276fef1c4a683aabaa53833c7ca-emoji-emoticon-sad-face-by-vexels.png" height="100" alt="">
+                            <div class="text-center c-promotion__badge c-promotion__badge--special-sale ">
+                              فروش ویژه
                             </div>
-                          </div>
-                        </div>
-                        <div class="left-side bg-gh">
-                          <h2 class="text-white">
-                            <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
-                          </h2>
-                        </div>
-                      </div>
-                      <span class="c-product-box__title text-center text-small">
-                        آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
-                      </span>
-                      <span class="c-price text-center">
-                        <span class="c-price text-danger">
-                          <span class="c-price__value js-price-value">
-                            <del>۶۹,۰۰۰ </del>
-                            ۱۰۸,۹۰۰
-                            <span class="c-price__currency">تومان</span>
-                          </span>
-                        </span>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="p-2">
-                    <a href="#">
-                      <span class="c-product-box__discount-badge">
-                        ٪۲۳
-                      </span>
-                      <div class="book ltr">
-                        <div class="front">
-                          <div class="cover">
                             <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
                           </div>
                         </div>
@@ -395,15 +495,15 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
-                      <span class="c-product-box__discount-badge">
-                        ٪۲۳
-                      </span>
                       <div class="book ltr">
                         <div class="front">
                           <div class="cover">
+                            <div class="text-center c-promotion__badge c-promotion__badge--special-sale ">
+                              فروش ویژه
+                            </div>
                             <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
                           </div>
                         </div>
@@ -428,15 +528,15 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
-                      <span class="c-product-box__discount-badge">
-                        ٪۲۳
-                      </span>
                       <div class="book ltr">
                         <div class="front">
                           <div class="cover">
+                            <div class="text-center c-promotion__badge c-promotion__badge--special-sale ">
+                              فروش ویژه
+                            </div>
                             <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
                           </div>
                         </div>
@@ -461,12 +561,41 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
-                      <span class="c-product-box__new-badge">
-                        جدید
+                      <div class="book ltr">
+                        <div class="front">
+                          <div class="cover">
+                            <div class="text-center c-promotion__badge c-promotion__badge--new-sale ">
+                              جدید
+                            </div>
+                            <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                          </div>
+                        </div>
+                        <div class="left-side bg-gh">
+                          <h2 class="text-white">
+                            <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                          </h2>
+                        </div>
+                      </div>
+                      <span class="c-product-box__title text-center text-small">
+                        آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
                       </span>
+                      <span class="c-price text-center">
+                        <span class="c-price text-danger">
+                          <span class="c-price__value js-price-value">
+                            ۱۰۸,۹۰۰
+                            <span class="c-price__currency">تومان</span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 pt-4 category-item">
+                  <div class="p-2">
+                    <a href="#">
                       <div class="book ltr">
                         <div class="front">
                           <div class="cover">
@@ -492,6 +621,117 @@
                       </span>
                     </a>
                   </div>
+                </div>
+                <div class="col-md-4 pt-4 category-item">
+                  <div class="p-2">
+                    <a href="#">
+                      <div class="book ltr">
+                        <div class="front">
+                          <div class="cover">
+                            <div class="text-center c-promotion__badge c-promotion__badge--new-sale ">
+                              جدید
+                            </div>
+                            <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                          </div>
+                        </div>
+                        <div class="left-side bg-gh">
+                          <h2 class="text-white">
+                            <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                          </h2>
+                        </div>
+                      </div>
+                      <span class="c-product-box__title text-center text-small">
+                        آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                      </span>
+                      <span class="c-price text-center">
+                        <span class="c-price text-danger">
+                          <span class="c-price__value js-price-value">
+                            ۱۰۸,۹۰۰
+                            <span class="c-price__currency">تومان</span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 pt-4 category-item">
+                  <div class="p-2">
+                    <a href="#">
+                      <div class="book ltr">
+                        <div class="front">
+                          <div class="cover">
+                            <div class="text-center c-promotion__badge c-promotion__badge--new-sale ">
+                              جدید
+                            </div>
+                            <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                          </div>
+                        </div>
+                        <div class="left-side bg-gh">
+                          <h2 class="text-white">
+                            <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                          </h2>
+                        </div>
+                      </div>
+                      <span class="c-product-box__title text-center text-small">
+                        آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                      </span>
+                      <span class="c-price text-center">
+                        <span class="c-price text-danger">
+                          <span class="c-price__value js-price-value">
+                            ۱۰۸,۹۰۰
+                            <span class="c-price__currency">تومان</span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 pt-4 category-item">
+                  <div class="p-2">
+                    <a href="#">
+                      <div class="book ltr">
+                        <div class="front">
+                          <div class="cover">
+                            <div class="text-center c-promotion__badge c-promotion__badge--new-sale ">
+                              جدید
+                            </div>
+                            <img class="img-fluid w-100 h-inherit" src="https://www.kanoonbook.ir/assets/img/product/main/2575837ff72d06543d477c0b45b0854c.png" alt="">
+                          </div>
+                        </div>
+                        <div class="left-side bg-gh">
+                          <h2 class="text-white">
+                            <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
+                          </h2>
+                        </div>
+                      </div>
+                      <span class="c-product-box__title text-center text-small">
+                        آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                      </span>
+                      <span class="c-price text-center">
+                        <span class="c-price text-danger">
+                          <span class="c-price__value js-price-value">
+                            ۱۰۸,۹۰۰
+                            <span class="c-price__currency">تومان</span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-12 bg-gh rounded-bottom">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center text-small pr-1 pl-1 pt-3">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">قبلی</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">بعدی</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>

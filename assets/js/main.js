@@ -59,7 +59,8 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
 
     function cartFunc() {
       var x = document.getElementById("carter");
-      if (x.style.display === "none") {
+
+      if (x.style.display !== "block") {
         x.style.display = "block";
       } else {
         x.style.display = "none";
