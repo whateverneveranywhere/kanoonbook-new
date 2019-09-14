@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-
-
 <!-- material design form -->
 <!--
 <div class="container">
@@ -96,7 +93,7 @@
         <img src="https://www.kanoonbook.ir/assets/img/Logo.png" width="140" class="d-inline-block align-top img-fluid" alt="">
       </a>
       <div class="pt-1 mr-auto m-small-text">
-        <a href="#"><i class="fas fa-user m-2 text-dark"></i></a>
+        <a href="#" data-toggle="modal" data-target="#loginmodal"><i class="fas fa-user m-2 text-dark"></i></a>
         <a class="hide-mobile" href="#" onclick="openSearch()">
           <i class="fas fa-search m-2 text-dark"></i>
         </a>
@@ -2354,6 +2351,86 @@
       </div>
     </div>
   </footer>
+
+  <!-- modal for login -->
+
+  <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="btn btn-outline-primary active m-2" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">ورود</a>
+              <a class="btn btn-outline-primary m-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ثبت نام</a>
+              <button type="button" class="close ml-1 mr-auto" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 pt-4">
+                    <p class="text-center">دانش آموز کانونی هستید؟</p>
+                    <div class="text-center">
+                      <label class="switch-input">
+                        <input type="checkbox">
+                        <span class="slider-input round"></span>
+                      </label>
+                    </div>
+                    <div class="container">
+                      <form>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" class="control-label">نام کاربری</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" class="control-label">رمز عبور</label><i class="bar"></i>
+                        </div>
+                      </form>
+                      <div class="button-container">
+                        <button type="button" class="button"><span>ورود</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 pt-4">
+                    <p class="text-center">شماره همراه خود را وارد کنید</p>
+
+                    <div class="container">
+                      <form>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" class="control-label">شماره همراه</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" class="control-label">کد ارسال شده به شماره شما</label><i class="bar"></i>
+                        </div>
+                      </form>
+                      <div class="button-container">
+                        <button type="button" class="button"><span>دریافت کد فعال سازی از طریق پیامک</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
