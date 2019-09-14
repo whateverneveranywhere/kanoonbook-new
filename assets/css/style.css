@@ -1248,6 +1248,7 @@ box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
 }
 
 .container .left-side{
+  padding-top: 10px !important;
 	background-color: #33527d !important;
   width: 40px;
   left: -20px;
@@ -1784,12 +1785,12 @@ background-image: linear-gradient(to bottom, #fceb0ae0,#ffffff), url('../img/rep
 
 
 .c-promotion__badge--new-sale {
-    color: #fb3449;
+    color: #33527d;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid #fb3449;
+    border-bottom: 1px solid #33527d;
     font-weight: 400;
 }
 
@@ -1903,7 +1904,11 @@ input:checked + .slider-input:before {
   border-radius: 50%;
 }
 
-
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 
 
@@ -2014,6 +2019,7 @@ input:checked + .slider-input:before {
 
 
 		.left-side h2 span:first-child {
+
 		  font-size: 10px !important;
 		}
 
