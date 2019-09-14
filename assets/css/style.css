@@ -1964,11 +1964,32 @@ line-height: normal;
   background:linear-gradient(transparent 150px, white);
 }
 
+.cart-product {
 
+transition: .3s;
 
+}
 
+.cart-product:hover {
 
+transition: .3s;
+background-color: #ffd60094;
 
+}
+
+.product-pic {
+
+width:auto !important;
+text-align: center !important;
+margin: auto;
+
+}
+
+.fill-it-all {
+
+    width: -webkit-fill-available;
+
+}
 
 
 
