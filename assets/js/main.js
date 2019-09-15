@@ -121,3 +121,16 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  // like button
+
+
+      function likeColor() {
+        var likeb = document.getElementById("likeButt");
+
+        if (likeb.style.color !== "red") {
+          likeb.style.color = "red";
+        } else {
+          likeb.style.color = "black";
+        }
+      }

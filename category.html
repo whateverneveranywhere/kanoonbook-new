@@ -27,12 +27,14 @@
 <body>
 
   <header>
+
     <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-main bg-main ltr default-shadow">
       <a class="navbar-brand" href="#">
         <img src="https://www.kanoonbook.ir/assets/img/Logo.png" width="140" class="d-inline-block align-top img-fluid" alt="">
       </a>
+
       <div class="pt-1 mr-auto m-small-text">
-        <a href="#"><i class="fas fa-user m-2 text-dark"></i></a>
+        <a href="#" data-toggle="modal" data-target="#loginmodal"><i class="fas fa-user m-2 text-dark"></i></a>
         <a class="hide-mobile" href="#" onclick="openSearch()">
           <i class="fas fa-search m-2 text-dark"></i>
         </a>
@@ -44,7 +46,6 @@
           <i class="fas fa-shopping-cart m-2 text-dark"></i>
           <span class="badge badge-pill badge-danger cart-quant-badge">2</span>
         </a>
-
       </div>
 
       <div class="ltr" id="carter">
@@ -113,7 +114,6 @@
           </div>
         </div>
       </div>
-
       <button class="navbar-toggler hide-desktop" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -186,12 +186,6 @@
         </div>
       </div>
 
-
-
-
-
-
-
       <button class="navbar-toggler hide-mobile" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -238,15 +232,6 @@
     </div>
   </header>
 
-
-
-
-
-
-
-
-
-
   <main>
     <section>
       <div class="container-fluid">
@@ -267,14 +252,11 @@
       </div>
       <div class="container-fluid pb-5">
         <div class="row">
-
-
-<div class="col-md-12 text-center hide-desktop">
-  <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#exampleModalCenter">
-    جستجوی پیشرفته
-  </button>
-</div>
-          <!-- Modal -->
+          <div class="col-md-12 text-center hide-desktop">
+            <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#exampleModalCenter">
+              جستجوی پیشرفته
+            </button>
+          </div>
           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -325,12 +307,7 @@
               </div>
             </div>
           </div>
-
-
-
-
-
-          <div class="col-md-3">
+          <div class="col-md-3 hide-mobile">
             <div class="mb-5 mt-2 sticky-top hide-mobile default-shadow rounded z-auto">
               <div class="bg-white rounded mb-3 mt-1 side-bar">
                 <h6 class="text-center pt-4">جستجوی پیشرفته</h6>
@@ -376,7 +353,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col">
             <div class="container pt-2">
               <div class="row bg-white rounded default-shadow">
                 <div class="col-md-12 text-right bg-gh rounded-top hide-desktop">
@@ -427,8 +404,9 @@
 
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
+                    <a href="#">
                     <div class="book ltr">
                       <div class="front">
                         <div class="cover">
@@ -442,10 +420,18 @@
                         </div>
                       </div>
                       <div class="left-side bg-gh">
-                        <h2 class="text-white">
+                        <h2 class="text-white ellipsis">
                           <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                         </h2>
                       </div>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a class="text-center" href="#">
+                        <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                      </a>
+                      <a class="text-center" href="#">
+                        <span class="text-center badge badge-pill badge-warning text-large"><i class="far fa-bell"></i></span>
+                      </a>
                     </div>
                     <span class="c-product-box__title text-center text-small">
                       آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -462,7 +448,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -475,10 +461,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -495,7 +489,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -508,10 +502,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -528,7 +530,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -541,10 +543,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -561,7 +571,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -574,10 +584,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -593,7 +611,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -603,10 +621,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -622,7 +648,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -635,10 +661,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -654,7 +688,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -667,10 +701,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -686,7 +728,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 category-item">
+                <div class="col-md-4 col-sm-6 col-6 pt-4 category-item">
                   <div class="p-2">
                     <a href="#">
                       <div class="book ltr">
@@ -699,10 +741,18 @@
                           </div>
                         </div>
                         <div class="left-side bg-gh">
-                          <h2 class="text-white">
+                          <h2 class="text-white ellipsis">
                             <span>آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)</span>
                           </h2>
                         </div>
+                      </div>
+                      <div class="text-center pt-2">
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-danger text-large"><i class="fas fa-heart"></i></span>
+                        </a>
+                        <a class="text-center" href="#">
+                          <span class="text-center badge badge-pill badge-primary text-large"><i class="fas fa-cart-plus"></i></span>
+                        </a>
                       </div>
                       <span class="c-product-box__title text-center text-small">
                         آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
@@ -740,15 +790,6 @@
       </div>
     </section>
   </main>
-
-
-
-
-
-
-
-
-
 
   <footer>
     <div class="container-fluid mt-3">
@@ -849,6 +890,87 @@
     </div>
   </footer>
 
+    <!-- modal for login -->
+
+    <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="btn btn-outline-primary active m-2" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">ورود</a>
+                <a class="btn btn-outline-primary m-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ثبت نام</a>
+                <button type="button" class="close ml-1 mr-auto" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 pt-4">
+                      <p class="text-center">دانش آموز کانونی هستید؟</p>
+                      <!---
+                      <div class="text-center">
+                        <label class="switch-input">
+                          <input type="checkbox">
+                          <span class="slider-input round"></span>
+                        </label>
+                      </div>
+                      ---->
+                      <div class="container">
+                        <form>
+                          <div class="form-group">
+                            <input class="text-right" type="text" required="required" />
+                            <label for="input" class="control-label">نام کاربری</label><i class="bar"></i>
+                          </div>
+                          <div class="form-group">
+                            <input class="text-right" type="text" required="required" />
+                            <label for="input" class="control-label">رمز عبور</label><i class="bar"></i>
+                          </div>
+                        </form>
+                        <div class="button-container">
+                          <button type="button" class="button"><span>ورود</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 pt-4">
+                      <p class="text-center">شماره همراه خود را وارد کنید</p>
+
+                      <div class="container">
+                        <form>
+                          <div class="form-group">
+                            <input class="text-right" type="text" required="required" />
+                            <label for="input" class="control-label">شماره همراه</label><i class="bar"></i>
+                          </div>
+                          <div class="form-group">
+                            <input class="text-right" type="text" required="required" />
+                            <label for="input" class="control-label">کد ارسال شده به شماره شما</label><i class="bar"></i>
+                          </div>
+                        </form>
+                        <div class="button-container">
+                          <button type="button" class="button"><span>دریافت کد فعال سازی از طریق پیامک</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
