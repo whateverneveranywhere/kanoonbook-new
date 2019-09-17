@@ -12,6 +12,12 @@ body {
 	margin: 0;
 }
 
+p {
+
+    line-height: initial;
+
+}
+
 a {
     text-decoration: none !important;
 }
@@ -41,6 +47,7 @@ h1 {
 .text-small {
 	font-size: 0.8em;
 }
+
 .text-xsmall {
 	font-size: 0.6em;
 }
@@ -1992,9 +1999,11 @@ margin: auto;
 }
 
 
+.text-smaller {
 
+font-size: smaller;
 
-
+}
 
 
 
