@@ -149,12 +149,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (checkbox.checked) {
       document.getElementById('usernamelog').innerHTML='شمارنده کانونی';
       document.getElementById('passwordlog').innerHTML='رمز عبور(کدملی)';
-      document.getElementById('signuporin').innerHTML ='ورود';
 
     } else {
       document.getElementById('usernamelog').innerHTML='نام کاربری';
       document.getElementById('passwordlog').innerHTML='رمز عبور';
-      document.getElementById('signuporin').innerHTML='ثبت نام';
 
     }
   });
