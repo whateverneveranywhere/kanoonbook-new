@@ -134,3 +134,28 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
           likeb.style.color = "black";
         }
       }
+
+
+      //toggle kanoonbook
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var checkbox = document.querySelector('input[type="checkbox"]');
+  document.getElementById('usernamelog').innerHTML = 'نام کاربری';
+  document.getElementById('passwordlog').innerHTML='رمز عبور';
+
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      document.getElementById('usernamelog').innerHTML='شمارنده کانونی';
+      document.getElementById('passwordlog').innerHTML='رمز عبور(کدملی)';
+      document.getElementById('signuporin').innerHTML ='ورود';
+
+    } else {
+      document.getElementById('usernamelog').innerHTML='نام کاربری';
+      document.getElementById('passwordlog').innerHTML='رمز عبور';
+      document.getElementById('signuporin').innerHTML='ثبت نام';
+
+    }
+  });
+});
