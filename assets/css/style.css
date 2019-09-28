@@ -1157,7 +1157,7 @@ right: 0;
 /* The content */
 .overlay-content {
   position: relative;
-  top: 46%;
+  top: 25%;
   width: 80%;
   text-align: center;
   margin-top: 30px;
@@ -2064,7 +2064,11 @@ transform: scale(1.02);
 
 }
 
+.same-width-button-gh {
 
+width: 85px;
+
+}
 
 
 
