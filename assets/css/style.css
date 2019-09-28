@@ -2070,7 +2070,18 @@ width: 85px;
 
 }
 
+.img-container {
+    transition: .3s;
+    position: relative;
+    display: visible;
+}
 
+.img-column {
+    transition: .3s;
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
 
 
 
