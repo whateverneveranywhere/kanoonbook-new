@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="667px" height="544px" viewBox="0 0 667 544" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="17.8157267%" x2="188.380612%" y2="173.623779%" id="linearGradient-1">
+            <stop stop-color="#1DAEEF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#1DAEEF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M682.296547,153.781437 L290.844556,511.074689 C269.039176,530.977296 235.228171,529.434794 215.325564,507.629413 C210.536831,502.382857 206.841798,496.234487 204.456387,489.543587 L30.4296305,1.41148376 C20.515549,-26.3967773 35.0216477,-56.976778 62.8299087,-66.8908596 C72.4592632,-70.3238756 82.8710938,-70.9236954 92.8309828,-68.6192048 L658.30973,62.2196467 C687.07253,68.8747008 704.994399,97.5865444 698.339344,126.349344 C695.896256,136.908248 690.301363,146.475134 682.296547,153.781437 Z" id="Polygon" fill="url(#linearGradient-1)" transform="translate(363.518969, 227.526672) rotate(-13.000000) translate(-363.518969, -227.526672) "></path>
+    </g>
+</svg>

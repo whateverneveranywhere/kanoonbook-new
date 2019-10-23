@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="en">
+
+<!-- material design form -->
+<!--
+<div class="container">
+  <form>
+    <h1>Material Design formular</h1>
+    <div class="form-group rtl">
+      <select>
+        <option>Value 1</option>
+        <option>Value 2</option>
+      </select>
+      <label for="select" class="control-label">Selectbox</label><i class="bar"></i>
+    </div>
+    <div class="form-group">
+      <input class="text-right" type="text" required="required" />
+      <label for="input" class="control-label">Textfield</label><i class="bar"></i>
+    </div>
+    <div class="form-group">
+      <textarea required="required"></textarea>
+      <label for="textarea" class="control-label">Textarea</label><i class="bar"></i>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input class="text-right" type="checkbox" checked="checked" />I'm the label from a checkbox<i class="helper"></i>
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input class="text-right" type="checkbox" />I'm the label from a checkbox<i class="helper"></i>
+      </label>
+    </div>
+    <div class="form-radio">
+      <div class="radio">
+        <label>
+          <input class="text-right" type="radio" name="radio" checked="checked" />
+          I'm the label from a radio button<i class="helper"></i>
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input class="text-right" type="radio" name="radio" />I'm the label from a radio button<i class="helper"></i>
+        </label>
+      </div>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input class="text-right" type="checkbox" />I'm the label from a checkbox<i class="helper"></i>
+      </label>
+    </div>
+  </form>
+  <div class="button-container">
+    <button type="button" class="button"><span>Submit</span></button>
+  </div>
+</div>
+-->
+<!-- material design form -->
+
+
+
+
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#e53935">
+  <meta name="title" content="کانون فرهنگی آموزش قلم چی | خرید آنلاین کتاب های قلمچی">
+  <meta name="description" content="فروشگاه کتاب کانون(قلم چی) پر تخفیف ترین سایت خرید آنلاین کتاب کمک آموزشی کنکور، دهم، نهم و هشتم تجربی و ریاضی و انسانی . دانلود رایگان یک فصل از هر کتاب">
+  <meta name="keywords"
+    content="کانون بوک, خرید کتاب قلمچی,خرید کتاب کانون, خرید کتاب قلمچی, خرید کتاب کمک آموزشی قلمچی, خرید کتاب کمک درسی قلمچی, خرید کتاب, خرید کتاب قلمچی, خرید کتاب قلمچی آنلاین, خرید آنلاین کتاب قلمچی, خرید ایترنتی کتاب قلمچی, سایت خرید کتاب قلمچی">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="https://www.kanoonbook.ir/assets/img/90_90_wXf_icon.ico" />
+  <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.theme.default.min.css">
+
+  <!--load all styles -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>کانون فرهنگی آموزش قلم چی | خرید آنلاین کتاب های قلمچی</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-main bg-main ltr default-shadow">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.kanoonbook.ir/assets/img/Logo.png" width="140" class="d-inline-block align-top img-fluid" alt="">
+      </a>
+      <div class="pt-1 mr-auto m-small-text">
+        <a href="#" data-toggle="modal" data-target="#loginmodal"><i class="fas fa-user m-2 text-dark"></i></a>
+        <a class="hide-mobile" href="#" onclick="openSearch()">
+          <i class="fas fa-search m-2 text-dark"></i>
+        </a>
+        <a class="hide-mobile" href="#" onclick="cartFunc()">
+          <i class="fas fa-shopping-cart m-2 text-dark"></i>
+          <span class="badge badge-pill badge-danger cart-quant-badge">2</span>
+        </a>
+        <a class="hide-desktop" href="#">
+          <i class="fas fa-shopping-cart m-2 text-dark"></i>
+          <span class="badge badge-pill badge-danger cart-quant-badge">2</span>
+        </a>
+
+      </div>
+
+      <div class="ltr" id="carter">
+        <div class="shopping-cart-container pt-3">
+          <div class="container-fluid">
+            <div class="row text-small">
+              <div class="col-md-12">
+                <div class="c-navi-list__basket-total">
+                  <span class="text-dark">مبلغ کل خرید:</span>
+                  <span> ۱۲۰,۰۰۰</span>
+                  <span> تومان</span>
+                </div>
+                <a class="c-navi-list__basket-link" href="#">
+                  <span>مشاهده سبد خرید</span>
+                </a>
+              </div>
+            </div>
+
+            <hr>
+
+
+            <div class="row product-cart-pop">
+              <div class="col-md-8 hover-cart-text">
+                <a href="#" class="text-dark">
+                  <p>
+                    آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                  </p>
+                </a>
+                <span class="c-price text-danger pt-1 text-center">
+                  <span class="c-price__value js-price-value pt-1">
+                    ۱۰۸,۹۰۰
+                    <span class="c-price__currency">تومان</span>
+                  </span>
+                  <p class="d-inline-block text-small pl-5">تعداد: 0</p>
+                </span>
+              </div>
+              <div class="col-md-4 text-center">
+                <a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/81VnTWWiJcL._SX342_.jpg" width="100%" class="rounded mx-auto d-block" alt="..."></a>
+
+              </div>
+            </div>
+            <hr>
+            <div class="row product-cart-pop">
+              <div class="col-md-8 hover-cart-text">
+                <a href="#" class="text-dark">
+                  <p>
+                    آبی ریاضیات کنکور ریاضی پایه دهم و یازدهم (پاسخ نامه)
+                  </p>
+                </a>
+                <span class="c-price text-danger pt-1 text-center">
+                  <span class="c-price__value js-price-value pt-1">
+                    ۱۰۸,۹۰۰
+                    <span class="c-price__currency">تومان</span>
+                  </span>
+                  <p class="d-inline-block text-small pl-5">تعداد: 0</p>
+                </span>
+              </div>
+              <div class="col-md-4 text-center">
+                <a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/81VnTWWiJcL._SX342_.jpg" width="100%" class="rounded mx-auto d-block" alt="..."></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="text-center p-2">
+            <button type="button" class="btn btn-outline-primary btn-sm btn-block">ثبت سفارش و ارسال</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="navbar-toggler hide-desktop" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-small" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto rtl hide-desktop">
+          <a class="nav-item nav-link active" href="#">صفحه اصلی <span class="sr-only"></span></a>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropdabestan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              دبستان
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropdabestan">
+              <a class="nav-item nav-link" href="#">اول دبستان</a>
+              <a class="nav-item nav-link" href="#">دوم دبستان</a>
+              <a class="nav-item nav-link" href="#">سوم دبستان</a>
+              <a class="nav-item nav-link" href="#">چهارم دبستان</a>
+              <a class="nav-item nav-link" href="#">پنجم دبستان</a>
+              <a class="nav-item nav-link" href="#">ششم دبستان</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropmotevaset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              متوسطه
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropmotevaset">
+              <a class="nav-item nav-link" href="#">هفتم</a>
+              <a class="nav-item nav-link" href="#">هشتم</a>
+              <a class="nav-item nav-link" href="#">نهم</a>
+              <a class="nav-item nav-link" href="#">دهم انسانی</a>
+              <a class="nav-item nav-link" href="#">دهم تجربی</a>
+              <a class="nav-item nav-link" href="#">دهم ریاضی</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropdabirestan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              دبیرستان
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropdabirestan">
+              <a class="nav-item nav-link" href="#">چهارم انسانی</a>
+              <a class="nav-item nav-link" href="#">چهارم تجربی</a>
+              <a class="nav-item nav-link" href="#">چهارم ریاضی</a>
+              <a class="nav-item nav-link" href="#">یازدهم انسانی</a>
+              <a class="nav-item nav-link" href="#">یازدهم تجربی</a>
+              <a class="nav-item nav-link" href="#">یازدهم ریاضی</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="nav-item nav-link" id="dropkonkoori" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              کنکوری
+            </a>
+            <div class="dropdown-menu text-center text-small p-2" aria-labelledby="dropkonkoori">
+              <a class="nav-item nav-link" href="#">دوازدهم ریاضی</a>
+              <a class="nav-item nav-link" href="#">دوازدهم تجربی</a>
+              <a class="nav-item nav-link" href="#">دوازدهم انسانی</a>
+              <a class="nav-item nav-link" href="#">هنرستان</a>
+              <a class="nav-item nav-link" href="#">کنکور زبان</a>
+              <a class="nav-item nav-link" href="#">کنکور هنر</a>
+            </div>
+          </div>
+          <div class="mr-auto ml-auto text-center hide-desktop">
+            <div class="container">
+              <form>
+                <div class="form-group mt-1 mb-1">
+                  <input class="text-right" type="text" required="required" />
+                  <label for="input" class="control-label text-muted">جستجو کتاب</label><i class="bar"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <button class="navbar-toggler hide-mobile" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-small hide-mobile" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto rtl">
+          <a class="nav-item nav-link active" href="#">صفحه اصلی <span class="sr-only"></span></a>
+          <a class="nav-item nav-link" href="#">مراکز پخش و فروش</a>
+          <a class="nav-item nav-link" href="#">خانه شیشه ای</a>
+          <a class="nav-item nav-link" href="#">همکاری با ما</a>
+
+          <div id="myOverlay" class="overlay"><a class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="far fa-times-circle mt-2 text-white"></i></a>
+            <div class="overlay-content">
+              <form>
+
+                <div class="form-group mt-1 mb-1 pb-5">
+                  <input class="text-right text-white" type="text" required="required" />
+                  <label for="input" class="control-label text-white">نام کتاب، کد کتاب یا سری کتاب را جستجو کنید!</label><i class="bar"></i>
+                </div>
+
+                <div class="form-group mt-1 mb-1 pb-5">
+                  <input class="text-right text-white" type="text" required="required" />
+                  <label for="input" class="control-label text-white">نام کتاب، کد کتاب یا سری کتاب را جستجو کنید!</label><i class="bar"></i>
+                </div>
+
+                <div class="form-group mt-1 mb-1 pb-5">
+                  <input class="text-right text-white" type="text" required="required" />
+                  <label for="input" class="control-label text-white">نام کتاب، کد کتاب یا سری کتاب را جستجو کنید!</label><i class="bar"></i>
+                </div>
+
+                <div class="button-container mt-3">
+                  <button type="button" class="button"><span>جستجو</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="mr-auto ml-auto text-center hide-desktop">
+            <div class="container">
+              <form>
+                <div class="form-group mt-1 mb-1">
+                  <input class="text-right" type="text" required="required" />
+                  <label for="input" class="control-label text-muted">جستجو کتاب</label><i class="bar"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-gh text-white">
+      <p class="text-center text-xsmall pt-2 pb-2">
+        <i class="fas fa-percent ml-1"></i>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+        <i class="fas fa-percent mr-1"></i>
+      </p>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 bg-white p-5">
+          <div class="text-center">
+            <h5><i class="fas fa-user ml-2"></i>پروفایل کاربری</h5>
+          </div>
+          <nav>
+            <div class="nav nav-tabs text-small font-weight-bold mt-5" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-prof-tab" data-toggle="tab" href="#nav-prof" role="tab" aria-controls="nav-prof" aria-selected="true">پروفایل کاربری</a>
+              <a class="nav-item nav-link" id="nav-stdbook-tab" data-toggle="tab" href="#nav-stdbook" role="tab" aria-controls="nav-stdbook" aria-selected="false">کتاب دانش آموزان</a>
+              <a class="nav-item nav-link" id="nav-stdbookcover-tab" data-toggle="tab" href="#nav-stdbookcover" role="tab" aria-controls="nav-stdbookcover" aria-selected="false">گزارش جلد محور کتاب دانش آموزان</a>
+              <a class="nav-item nav-link" id="nav-orders-tab" data-toggle="tab" href="#nav-orders" role="tab" aria-controls="nav-orders" aria-selected="false">سفارشات من</a>
+              <a class="nav-item nav-link" id="nav-bookdemo-tab" data-toggle="tab" href="#nav-bookdemo" role="tab" aria-controls="nav-bookdemo" aria-selected="false">نمایه های کتاب</a>
+              <a class="nav-item nav-link" id="nav-probs-tab" data-toggle="tab" href="#nav-probs" role="tab" aria-controls="nav-probs" aria-selected="false">اشکالات ارسالی من</a>
+              <a class="nav-item nav-link" id="nav-mycm-tab" data-toggle="tab" href="#nav-mycm" role="tab" aria-controls="nav-mycm" aria-selected="false">کامنت های ارسالی من</a>
+              <a class="nav-item nav-link" id="nav-homecleaner-tab" data-toggle="tab" href="#nav-homecleaner" role="tab" aria-controls="nav-homecleaner" aria-selected="false">خانه تکانی ویژه دبیران</a>
+
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-prof" role="tabpanel" aria-labelledby="nav-prof-tab">
+
+
+
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-12 text-center mb-5">
+                    <a href="#">
+                      <img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/ins-ban.png">
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                        <h6 class="text-center pb-3">اطلاعات شخصی</h6>
+                        <tbody class="text-center">
+                          <tr>
+                            <td>نام</td>
+                            <td>سیاوش</td>
+                          </tr>
+                          <tr>
+                            <td>نام خانوادگی </td>
+                            <td>صادقی</td>
+                          </tr>
+                          <tr>
+                            <td>نام کاربری </td>
+                            <td>9120671951</td>
+                          </tr>
+                          <tr>
+                            <td>نوع کاربری </td>
+                            <td>هماهنگ کننده</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <table class="table table-hover">
+                      <h6 class="text-center pb-3">اطلاعات تماسی</h6>
+                      <tbody class="text-center">
+                        <tr>
+                          <td>تلفن ثابت </td>
+                          <td>2177704219</td>
+                        </tr>
+                        <tr>
+                          <td>آدرس ایمیل </td>
+                          <td>siavash249@yahoo.com</td>
+                        </tr>
+                        <tr>
+                          <td>شماره موبایل </td>
+                          <td>9120671951</td>
+                        </tr>
+                        <tr>
+                          <td>شهر</td>
+                          <td>تهران</td>
+                        </tr>
+                        <tr>
+                          <td>استان</td>
+                          <td>تهران</td>
+                        </tr>
+                        <tr>
+                          <td>کد پستی </td>
+                          <td>1655753138</td>
+                        </tr>
+                        <tr>
+                          <td>آدرس پستی </td>
+                          <td>تهران پارس</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-stdbook" role="tabpanel" aria-labelledby="nav-stdbook-tab">
+
+
+
+              <h5 class="text-center pt-4 pb-2">گزارش کتاب دانش آموزان</h5>
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <div class="container">
+                    <form>
+                      <div class="form-group rtl">
+                        <select>
+                          <option>Value 1</option>
+                          <option>Value 2</option>
+                        </select>
+                        <label for="select" class="control-label">طرح های سایت</label><i class="bar"></i>
+                      </div>
+                    </form>
+                    <div class="button-container">
+                      <button type="button" class="button"><span>ثبت</span></button>
+                    </div>
+                  </div>
+                  <div class="table-responsive pt-4 text-small">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">ثبت کننده سفارش </th>
+                          <th scope="col">نام و نام خانوادگی </th>
+                          <th scope="col">پرداخت شده بررسی نشده </th>
+                          <th scope="col">پرداخت شده تایید شده </th>
+                          <th scope="col">پرداخت شده تایید نشده </th>
+                          <th scope="col">پرداخت نشده</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="nav-stdbookcover" role="tabpanel" aria-labelledby="nav-stdbookcover-tab">
+
+
+
+
+
+
+              <h5 class="text-center pt-4 pb-2">گزارش کتاب دانش آموزان</h5>
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <div class="container">
+                    <form>
+                      <div class="form-group rtl">
+                        <select>
+                          <option>Value 1</option>
+                          <option>Value 2</option>
+                        </select>
+                        <label for="select" class="control-label">طرح های سایت</label><i class="bar"></i>
+                      </div>
+                    </form>
+                    <div class="button-container">
+                      <button type="button" class="button"><span>ثبت</span></button>
+                    </div>
+                  </div>
+                  <div class="table-responsive pt-4 text-small">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">ثبت کننده سفارش </th>
+                          <th scope="col">نام و نام خانوادگی </th>
+                          <th scope="col">پرداخت شده بررسی نشده </th>
+                          <th scope="col">پرداخت شده تایید شده </th>
+                          <th scope="col">پرداخت شده تایید نشده </th>
+                          <th scope="col">پرداخت نشده</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19767234 </td>
+                          <td>زهرا حسنى </td>
+                          <td>
+                            <a href="#">11</a>
+                          </td>
+                          <td>
+                            <a href="#">30</a>
+                          </td>
+                          <td>
+                            <a href="#">1</a>
+                          </td>
+                          <td>
+                            <a href="#">3</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-orders" role="tabpanel" aria-labelledby="nav-orders-tab">
+
+
+
+
+              <h5 class="text-center pt-4 pb-2">سفارشات من</h5>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <div class="table-responsive pt-4 text-small">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">شماره فاکتور </th>
+                          <th scope="col">تاریخ فاکتور </th>
+                          <th scope="col">ساعت فاکتور </th>
+                          <th scope="col">کد تخفیف </th>
+                          <th scope="col">قیمت کل </th>
+                          <th scope="col">هزینه ارسال </th>
+                          <th scope="col">نحوه ارسال </th>
+                          <th scope="col">مبلغ پرداخت شده </th>
+                          <th scope="col">وضعیت پرداخت </th>
+                          <th scope="col">مشاهده</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>66 </td>
+                          <td>1395/02/30 </td>
+                          <td>17:59 </td>
+                          <td>sdasd</td>
+                          <td>23000 </td>
+                          <td>3000 </td>
+                          <td>پیک (تحویل 2 ساعته در صورت موجود بودن کتاب در شهر شما و در ساعات کاری) </td>
+                          <td>-</td>
+                          <td>پرداخت نشده </td>
+                          <td>
+                            <a data-toggle="collapse" href="#colapzas" role="button" aria-expanded="false" aria-controls="colapzas">
+                              <button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i></button>
+                            </a>
+                          </td>
+                          <tr>
+                            <div class="container pb-2">
+
+                                <div class="collapse" id="colapzas">
+                                  <div class="card card-body">
+                                    <div class="container-fluid">
+                                      <div class="row">
+                                        <div class="col-md-3 text-center">
+                                          <p class="font-weight-bold">  قیمت</p>
+
+                                          <br>
+                                          23000
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                          <p class="font-weight-bold">تعداد</p>
+
+                                          <br>
+                                          1
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                          <p class="font-weight-bold">  نام کتاب</p>
+
+                                          <br>
+                                          10 سال کنکور فیزیک پیش دانشگاهی ریاضی
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                          <p class="font-weight-bold">  شناسه کتاب</p>
+
+                                          <br>
+                                          1
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+                          </tr>
+                        </tr>
+
+                        <tr>
+                          <td>66 </td>
+                          <td>1395/02/30 </td>
+                          <td>17:59 </td>
+                          <td>sdasd</td>
+                          <td>23000 </td>
+                          <td>3000 </td>
+                          <td>پیک (تحویل 2 ساعته در صورت موجود بودن کتاب در شهر شما و در ساعات کاری) </td>
+                          <td>-</td>
+                          <td>پرداخت نشده </td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>66 </td>
+                          <td>1395/02/30 </td>
+                          <td>17:59 </td>
+                          <td>sdasd</td>
+                          <td>23000 </td>
+                          <td>3000 </td>
+                          <td>پیک (تحویل 2 ساعته در صورت موجود بودن کتاب در شهر شما و در ساعات کاری) </td>
+                          <td>-</td>
+                          <td>پرداخت نشده </td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>66 </td>
+                          <td>1395/02/30 </td>
+                          <td>17:59 </td>
+                          <td>sdasd</td>
+                          <td>23000 </td>
+                          <td>3000 </td>
+                          <td>پیک (تحویل 2 ساعته در صورت موجود بودن کتاب در شهر شما و در ساعات کاری) </td>
+                          <td>-</td>
+                          <td>پرداخت نشده </td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>66 </td>
+                          <td>1395/02/30 </td>
+                          <td>17:59 </td>
+                          <td>sdasd</td>
+                          <td>23000 </td>
+                          <td>3000 </td>
+                          <td>پیک (تحویل 2 ساعته در صورت موجود بودن کتاب در شهر شما و در ساعات کاری) </td>
+                          <td>-</td>
+                          <td>پرداخت نشده </td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>66 </td>
+                          <td>1395/02/30 </td>
+                          <td>17:59 </td>
+                          <td>sdasd</td>
+                          <td>23000 </td>
+                          <td>3000 </td>
+                          <td>پیک (تحویل 2 ساعته در صورت موجود بودن کتاب در شهر شما و در ساعات کاری) </td>
+                          <td>-</td>
+                          <td>پرداخت نشده </td>
+                          <td>
+                            <a href="#">
+                              <button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i></button>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-bookdemo" role="tabpanel" aria-labelledby="nav-bookdemo-tab">
+
+
+
+
+
+              <h5 class="text-center pt-4 pb-2">توضیحات کتاب</h5>
+              <div class="row">
+                <div class="container">
+                  <form>
+                    <div class="row text-center">
+                      <div class="form-group rtl w-25 mr-2 ml-2">
+                        <select>
+                          <option>Value 1</option>
+                          <option>Value 2</option>
+                        </select>
+                        <label for="select" class="control-label">طرح های سایت</label><i class="bar"></i>
+                      </div>
+                      <div class="form-group rtl w-25 mr-2 ml-2">
+                        <select>
+                          <option>Value 1</option>
+                          <option>Value 2</option>
+                        </select>
+                        <label for="select" class="control-label">طرح های سایت</label><i class="bar"></i>
+                      </div>
+                      <div class="form-group rtl w-25 mr-2 ml-2">
+                        <select>
+                          <option>Value 1</option>
+                          <option>Value 2</option>
+                        </select>
+                        <label for="select" class="control-label">طرح های سایت</label><i class="bar"></i>
+                      </div>
+                    </div>
+                    <div class="button-container">
+                      <button type="button" class="button"><span>ثبت</span></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="table-responsive pt-4 text-small">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">تصویر </th>
+                          <th scope="col">نام کتاب	 </th>
+                          <th scope="col">انتخاب </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/product/sidebar-pro/ce586b5827410c6be62348e502100082.png" alt=""> </td>
+                          <td>آبی حسابان یازدهم	 </td>
+                          <td>pekh </td>
+                        </tr>
+                        <tr>
+                          <td><img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/product/sidebar-pro/ce586b5827410c6be62348e502100082.png" alt=""> </td>
+                          <td>آبی حسابان یازدهم	 </td>
+                          <td>pekh </td>
+                        </tr>
+                        <tr>
+                          <td><img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/product/sidebar-pro/ce586b5827410c6be62348e502100082.png" alt=""> </td>
+                          <td>آبی حسابان یازدهم	 </td>
+                          <td>pekh </td>
+                        </tr>
+                        <tr>
+                          <td><img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/product/sidebar-pro/ce586b5827410c6be62348e502100082.png" alt=""> </td>
+                          <td>آبی حسابان یازدهم	 </td>
+                          <td>pekh </td>
+                        </tr>
+                        <tr>
+                          <td><img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/product/sidebar-pro/ce586b5827410c6be62348e502100082.png" alt=""> </td>
+                          <td>آبی حسابان یازدهم	 </td>
+                          <td>pekh </td>
+                        </tr>
+                        <tr>
+                          <td><img class="img-fluid" src="https://www.kanoonbook.ir/assets/img/product/sidebar-pro/ce586b5827410c6be62348e502100082.png" alt=""> </td>
+                          <td>آبی حسابان یازدهم	 </td>
+                          <td>pekh </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-probs" role="tabpanel" aria-labelledby="nav-probs-tab">
+
+
+
+
+
+
+
+                            <h5 class="text-center pt-4 pb-2">اشکالات ارسالی کتاب توسط شما</h5>
+                            <div class="row">
+                              <div class="col-md-4 text-center">
+                          <img class="img-fluid" width="120" src="https://www.kanoonbook.ir/assets/img/product/main/b377dd240a666337b7c6590c49ec3f93.png" alt="">
+                              </div>
+                              <div class="col-md-8 text-center">
+                        <p class="text-right text-primary">آبی ریاضی هشتم</p>
+                        <p class="text-right"> اشکال</p>
+                              </div>
+
+                            </div>
+                            <div class="button-container">
+                              <button type="button" class="button"><span>ثبت</span></button>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-mycm" role="tabpanel" aria-labelledby="nav-mycm-tab">
+
+
+
+
+                                          <h5 class="text-center pt-4 pb-2">اشکالات ارسالی کتاب توسط شما</h5>
+                                          <div class="row">
+                                            <div class="col-md-4 text-center">
+                                        <img class="img-fluid" width="120" src="https://www.kanoonbook.ir/assets/img/product/main/d28f8d22f8f8c514efd1bebbeb8aa68f.png" alt="">
+                                            </div>
+                                            <div class="col-md-8 text-center">
+                                      <p class="text-right text-primary">کتاب خودآموزی - ویژه دبیرستان (مشابه کلاسور ارزیابی)</p>
+                                      <p class="text-right">khjbhjbj</p>
+                                            </div>
+
+                                          </div>
+                                          <div class="button-container">
+                                            <button type="button" class="button"><span>ثبت</span></button>
+                                          </div>
+
+
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-homecleaner" role="tabpanel" aria-labelledby="nav-homecleaner-tab">...</div>
+
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-md-12 bg-gh default-shadow">
+          <a href="#">
+            <h5 class="text-center text-white pb-3" id="scrltp">
+              برگشت به بالا
+              <i class="fas fa-chevron-circle-up color-main display-5 mt-4"></i> </h5>
+          </a>
+        </div>
+        <div class="col-md-12 text-center d-inline-block p-4 bg-white">
+          <img class="img-fluid" src="https://shikeno.com/wp-content/uploads/2017/02/samandehi.png" alt="">
+          <img class="img-fluid" src="https://onlinerooz.com/wp-content/uploads/2018/05/icon-symbol-enamad.png" alt="">
+          <img class="hide-mobile" src="https://s.cafebazaar.ir/1/icons/com.fidibo.ghalamchi.white_512x512.png" height="120" alt="">
+
+          <div class="pt-2">
+            <p class="text-small text-right">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+              کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+              صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+            <p class="text-small text-right">
+              <i class="fas fa-map-marker-alt ml-2"></i>
+              تهران - تهران - شریعتی زیر پل سیدخندان خیابان میرمطهری جنوبی پلاک 22 طبقه اول واحد3 - کدپستی: 1555835831
+            </p>
+            <p class="text-small text-right">
+              <a class=" text-dark" href="#">
+                <i class="fas fa-at ml-2"></i>
+                info@kanoonbook.ir
+              </a>
+            </p>
+            <p class="text-small text-right">
+              <a class="text-dark" href="https://www.instagram.com/kanoonbook.ir/">
+                <i class="fab fa-instagram ml-2"></i>
+                به اینستاگرام کانون بوک بپیوندید
+              </a>
+            </p>
+          </div>
+
+        </div>
+        <div class="col-md-12 hide-mobile text-center">
+          <div class="row">
+            <div class="col-md-4 text-right p-4 rep-pat-footer">
+              <h5 class="pb-3">مزایای خرید ازما</h5>
+              <a class="text-small text-dark" href="#">
+                <p>سفارشات</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>خرید آسان</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>پشتیبانی قوی</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>جستجوی حرفه ای</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>کامل بودن</p>
+              </a>
+            </div>
+            <div class="col-md-4 text-right p-4 rep-pat-footer">
+              <h5 class="pb-3">مزایای خرید ازما</h5>
+              <a class="text-small text-dark" href="#">
+                <p>سفارشات</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>خرید آسان</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>پشتیبانی قوی</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>جستجوی حرفه ای</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>کامل بودن</p>
+              </a>
+            </div>
+            <div class="col-md-4 text-right p-4 rep-pat-footer">
+              <h5 class="pb-3">مزایای خرید ازما</h5>
+              <a class="text-small text-dark" href="#">
+                <p>سفارشات</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>خرید آسان</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>پشتیبانی قوی</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>جستجوی حرفه ای</p>
+              </a>
+              <a class="text-small text-dark" href="#">
+                <p>کامل بودن</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 bg-gh text-center text-white pt-2 default-shadow">
+          <a class="text-white text-small ml-2 mr-2" href="tel:021887427650"><i class="fas fa-phone ml-2"></i>021-88742765</a>
+          <a class="text-white text-small ml-2 mr-2" href="tel:02166684650"><i class="fas fa-phone ml-2"></i>021-66684650</a>
+          <a class="text-white text-small ml-2 mr-2" href="tel:02166684652"><i class="fas fa-phone ml-2"></i>021-66684652</a>
+          <a class="text-white text-small ml-2 mr-2" href="tel:02166684654"><i class="fas fa-phone ml-2"></i>021-66684654</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal for login -->
+
+  <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="btn btn-outline-primary active m-2" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">ورود</a>
+              <a class="btn btn-outline-primary m-2" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ثبت نام</a>
+              <button type="button" class="close ml-1 mr-auto" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 pt-4">
+                    <p class="text-center">دانش آموز کانونی هستید؟</p>
+
+                    <div class="text-center">
+                      <label class="switch-input">
+                        <input type="checkbox">
+                        <span class="slider-input round"></span>
+                      </label>
+                    </div>
+
+                    <div class="container">
+                      <form>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" id="usernamelog" class="control-label"></label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" id="passwordlog" class="control-label"></label><i class="bar"></i>
+                        </div>
+                      </form>
+                      <div class="button-container">
+                        <button type="button" class="button"><span>ورود</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 pt-4">
+                    <p class="text-center">شماره همراه خود را وارد کنید</p>
+
+                    <div class="container">
+                      <form>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" class="control-label">شماره همراه</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <input class="text-right" type="text" required="required" />
+                          <label for="input" class="control-label">کد ارسال شده به شماره شما</label><i class="bar"></i>
+                        </div>
+                      </form>
+                      <div class="button-container">
+                        <button type="button" class="button"><span class="text-small">دریافت کد فعال سازی از طریق پیامک</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./assets/OwlCarousel/owl.carousel.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+  <script defer src="./assets/fontawesome/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--load all styles -->
+</body>
+
+</html>

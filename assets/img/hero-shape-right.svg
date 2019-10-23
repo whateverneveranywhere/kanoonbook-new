@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="538px" height="453px" viewBox="0 0 538 453" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="-9.00474282%" y1="59.1485195%" x2="102.243337%" y2="28.2176932%" id="linearGradient-1">
+            <stop stop-color="#6AD8F9" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#46C8FA" stop-opacity="0.235875226" offset="53.1788106%"></stop>
+            <stop stop-color="#27BAFB" stop-opacity="0.497282609" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-1307.000000, -18.000000)" fill="url(#linearGradient-1)">
+            <path d="M1812.17278,202.364346 L1504.28702,483.383498 C1487.1366,499.037345 1460.54349,497.824132 1444.88964,480.673712 C1441.12319,476.547178 1438.21697,471.711347 1436.34079,466.448804 L1299.46484,82.521962 C1291.66719,60.6501413 1303.07657,36.5982852 1324.94839,28.8006378 C1332.52209,26.1004938 1340.71123,25.6287221 1348.5449,27.4412556 L1793.30662,130.348945 C1815.9292,135.583295 1830.02515,158.165803 1824.7908,180.78839 C1822.86926,189.093205 1818.46875,196.617775 1812.17278,202.364346 Z" id="Polygon" transform="translate(1561.447073, 260.366626) rotate(174.000000) translate(-1561.447073, -260.366626) "></path>
+        </g>
+    </g>
+</svg>
